@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x:hidden; */
+}
+
+/* ?============================  start variable and default styling  =================== */
+
+:root {
+  --background-color: #0F2C59;
+  --primary-color: #DAC0A3;
+  --secondary-color: #DAC0A3;
+  --third-color: #EADBC8;
+  --forth-color: #F8F0E5;
+  --fivth-color: #0066FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* !============================   end variable and default styling   =================== */
+
+/* ?============================  start navbar-section  =================== */
+.top-header {
+  position: relative;
+}
+
+.top-header-info {
+  width: 100%;
+  height: 50px;
+  background-color: var(--background-color);
+}
+
+.svg-1 {
+  width: 100%;
+  height: 80vh;
+
+
+}
+
+.top-header {
+  position: relative;
+}
+
+.nav-bar {
+  top: 50px;
+}
+
+.nav-bar nav {
+  background-color: var(--fivth-color) !important;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-item a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  color: black !important;
+}
+
+/* !============================   end navbar-section   =================== */
+
+
+
+/* ?============================  start header-body  =================== */
+.header-content {
+  position: absolute;
+  top: 288px;
+  left: 7%;
+}
+
+.img-svg {
+
+  filter: drop-shadow(1px 2px 2px black);
+
+}
+.svg-1{
+  
+  filter: drop-shadow(1px 0px 9px black);
+
+}
+
+/* !============================   end header-body   =================== */
+
+
+
+/* ?============================  start our-courses-section  =================== */
+
+.our-course-section {
+  margin-top: 180px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* !============================   end our-courses-section   =================== */
+
+
+/* ?============================  start contact-us  =================== */
+.form-control {
+  border: 1px solid black;
+}
+/* !============================   end contact-us   =================== */
+
+
+.footer{
+  background-color: var(--background-color);
+  color: white;
+}
+
+.bottom-footer{
+  /* background-color: var(--background-color); */
+  color: white;
+}
+
+
+/* ?============================  start media query for all  =================== */
+/* navigation */
+
+@media (max-width:992px) {
+  .nav-item a:hover {
+    background-color: var(--fivth-color);
+    border-radius: 0;
+    color: white !important;
+  }
+
+}
+
+/* header-img */
+@media (max-width:992px) {
+  .img-svg {
+    display: none;
+  }
+
+  .our-course-section {
+    margin-top: 150px;
+  }
+
+  .content-div {
+    margin-top: 74px;
+  }
+}
+
+
+@media screen and (max-width:568px) {
+  .card-content {
+    margin-bottom: 30px !important;
+  }
+}
+@media (max-width:568px) {
+  
+  .teachers-section{
+    padding-left: 10% !important;
+  }
+  .img-team{
+    margin-top:10%;
+    margin-left: 15%;
+  }
+}
+
+
+
+
+
+/* !============================   end media query for all   =================== */
